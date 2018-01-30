@@ -39,6 +39,7 @@ public interface ParticipantRepository extends GraphRepository<PhysicalEntity> {
             "       COLLECT(DISTINCT({" +
             "              dbId: re.dbId, " +
             "              displayName: re.displayName, " +
+            "              geneName: re.geneName, " +
             "              identifier: CASE WHEN re.variantIdentifier IS NOT NULL THEN re.variantIdentifier ELSE re.identifier END, " +
             "              url: re.url, " +
             "              schemaClass: re.schemaClass" +
@@ -52,6 +53,7 @@ public interface ParticipantRepository extends GraphRepository<PhysicalEntity> {
             "       COLLECT(DISTINCT({" +
             "              dbId: re.dbId, " +
             "              displayName: re.displayName, " +
+            "              geneName: re.geneName, " +
             "              identifier: CASE WHEN re.variantIdentifier IS NOT NULL THEN re.variantIdentifier ELSE re.identifier END, " +
             "              url: re.url, " +
             "              schemaClass: re.schemaClass" +
